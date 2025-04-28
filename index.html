@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>we-it - We Make it Happen</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- === TAILWINDCSS CDN === -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- === SCROLLREVEL CDN === -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- === REMIXICON CDN === -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- === SPLIDE.MIN.CSS === -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!-- === LEAFLET CDN CSS === -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <!-- === LEAFLET JS CDN === -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+
+
+<body>
+    <header class="w-full h-14 bg-white border-b border-gray-200 px-7 md:px-14">
+        <nav class="w-full h-full flex items-center justify-between">
+            <a href="/" class="flex items-center space-x-2 logo">
+                <!-- logo -->
+                <img src="./img/ai_logo.png" alt="we-it-logo" class="w-10 h-10 object-cover">
+                <h3 class="text-2xl text-blue-500 font-semibold capitalize">we <span class="text-green-400">IT</span></h3>
+            </a>
+            <div class="nav_menu" id="nav_menu">
+                <button class="outline-none  absolute top-3 right-5" id="close_btn"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+                <ul class="lg:flex items-center md:space-x-6">
+                    <li class="list_item"><a class="text-md font-semibold capitalize nav_link active" href="/">home</a></li>
+                    <li class="list_item"><a class="text-md  font-semibold  capitalize nav_link" href="#about">about</a></li>
+                    <li class="list_item"><a class="text-md  font-semibold capitalize nav_link" href="#services">services</a></li>
+                    <li class="list_item"><a  class="text-md  font-semibold  capitalize nav_link" href="#work">work</a></li>
+                    <li class="list_item"><a  class="text-md  font-semibold  capitalize nav_link" href="#testimonials">testimonials</a></li>
+                    <li class="list_item"><a  class="text-md  font-semibold  capitalize nav_link" href="#team">team</a></li>
+                    <li class="list_item"><a class="text-md  font-semibold capitalize nav_link" href="#contact">contact</a></li>
+                </ul>
+            </div>
+
+            <button
+            id="toggle_btn"
+            class="lg:hidden block"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </nav>
+    </header>
+
+    <section class="hero w-full" id="hero">
+        <div class="center text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white capitalize tracking-wider text-blue-500">we <span class="text-green-400 border-b-4 border-green-400">make IT</span>
+            </h1>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white capitalize tracking-wide mt-6 text-blue-500">happen !</h1>
+        </div>
+    </section>
+
+    <br><br>
+    <section class="info w-full h-full" id="about">
+        <main class="info_container flex lg:flex-row flex-col items-center justify-center">
+            <div class="md:w-1/2 w-full h-96 flex items-center justify-center">
+                <img src="./img/automation.png" alt="automation" class="w-96 h-auto">
+            </div>
+
+            <div class="md:w-1/2 w-full h-full p-3 flex flex-col space-y-6">
+                <h2 class="text-xl md:text-3xl text-center md:text-left font-semibold text-blue-800 capitalize">we make it happen</h2>
+                <p class="text-md text-center md:text-left text-gray-400">WE-IT is a pioneer in developing and providing customized personnel solutions, is born out of the need to offer innovation dedicated to the idea that people deserve to experience.
+                <br><br>
+                We are committed to maintaining customer satisfaction, trust and integrity by delivering quality bespoke IT solutions and services consistent with industry best practices and delivering great employee experience.
+                </p>
+                <div>
+                    <ul class="flex flex-col space-y-4">
+                        <li class="text-sm md:text-md capitalize text-gray-600 flex items-center tracking-wide"><svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> web design</li>
+                        <li class="text-sm md:text-md capitalize text-gray-600 flex items-center tracking-wide"><svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> automation</li>
+                        <li class="text-sm md:text-md capitalize text-gray-600 flex items-center tracking-wide"><svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> software</li>
+                        <li class="text-sm md:text-md capitalize text-gray-600 flex items-center tracking-wide"><svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> hardware</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </section>
+    <br><br><br>
+
+    <section class="w-full mb-10 services_container" id="services">
+        <div class="services">
+            <h2 class="text-2xl lg:text-3xl font-semibold text-green-500 services_text uppercase tracking-wide">services</h2>
+            <p class="mt-10 mb-5 text-md lg:text-lg mb-5 text-gray-700">Welcome, below are the services which are provided by <a href="/" class="text-lg text-green-500 hover:text-blue-500">WeIT</a> along with their short description for which they Stand's.</p>
+
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 w-full h-full p-2">
+                <div class="h-max md:h-44 shadow-lg rounded-lg card flex md:flex-row flex-col items-center border py-4 md:py-0">
+                    <div class="w-44 h-full flex items-center justify-center">
+                        <img
+                        class="w-24 h-24"
+                        src="./img/automation.png" alt="automation_img">
+                    </div>
+                    <div class="px-3 py-2 md:w-96">
+                        <h4 class="text-xl font-semibold text-gray-800 capitalize mt-5">automation</h4>
+                        <p class="text-sm text-gray-600 mt-3">Automation is a term for technology applications where human input is minimized, which includes IT automation, personal applications such as home automation and more.</p>
+                    </div>
+                </div>
+                <div class="h-max md:h-44 shadow-lg rounded-lg card flex md:flex-row flex-col items-center border py-4 md:py-0">
+                    <div class="w-44 h-full flex items-center justify-center">
+                        <img
+                        class="w-24 h-24"
+                        src="./img/robotics.png" alt="robotics_img">
+                    </div>
+                    <div class="px-3 py-2 md:w-96">
+                        <h4 class="text-xl font-semibold text-gray-800 capitalize mt-5">robotics</h4>
+                        <p class="text-sm text-gray-600 mt-3">Robotics involves design, construction, operation, and use of robots. The goal of robotics is to design machines that can help and assist humans</p>
+                    </div>
+                </div>
+                <div class="h-max md:h-44 shadow-lg rounded-lg card flex md:flex-row flex-col items-center border py-4 md:py-0">
+                    <div class="w-52 h-full flex items-center justify-center">
+                        <img
+                        class="w-24 h-24"
+                        src="./img/web_development.png" alt="web_development_img">
+                    </div>
+                    <div class="px-3 py-2 md:w-96">
+                        <h4 class="text-xl font-semibold text-gray-800 capitalize mt-5">web development</h4>
+                        <p class="text-sm text-gray-600 mt-3">Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management.</p>
+                    </div>
+                </div>
+                <div class="h-max md:h-44 shadow-lg rounded-lg card flex md:flex-row flex-col items-center border py-4 md:py-0">
+                    <div class="w-44 h-full flex items-center justify-center">
+                        <img
+                        class="w-24 h-24"
+                        src="./img/analysis.png" alt="data_analysic_img">
+                    </div>
+                    <div class="px-3 py-2 md:w-96">
+                        <h4 class="text-xl font-semibold text-gray-800 capitalize mt-5">data analyasis</h4>
+                        <p class="text-sm text-gray-600 mt-3">Data analysis is a process of cleaning, transforming, and modeling data to discover useful information for business decision-making.</p>
+                    </div>
+                </div>
+                <div class="h-max md:h-44 shadow-lg rounded-lg card flex md:flex-row flex-col items-center border py-4 md:py-0">
+                    <div class="w-44 h-full flex items-center justify-center">
+                        <img
+                        class="w-24 h-24"
+                        src="./img/ai.png" alt="ml_ai_img">
+                    </div>
+                    <div class="px-3 py-2 md:w-96">
+                        <h4 class="text-xl font-semibold text-gray-800 capitalize mt-5">Machine learning /Artifical inteligence</h4>
+                        <p class="text-sm text-gray-600 mt-3">They are machine replicas of human beings. They can think for themselves, take important decisions on their own without human help.</p>
+                    </div>
+                </div>
+                <div class="h-max md:h-44 shadow-lg rounded-lg card flex md:flex-row flex-col items-center border py-4 md:py-0">
+                    <div class="w-44 h-full flex items-center justify-center">
+                        <img
+                        class="w-24 h-24"
+                        src="./img/data-mining.png" alt="data_mining_img">
+                    </div>
+                    <div class="px-3 py-2 md:w-96">
+                        <h4 class="text-xl font-semibold text-gray-800 capitalize mt-5">data mining</h4>
+                        <p class="text-sm text-gray-600 mt-3">Data mining is a process of extracting and discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.</p>
+                    </div>
+                </div>
+                <div class="h-max md:h-44 shadow-lg rounded-lg card flex md:flex-row flex-col items-center border py-4 md:py-0">
+                    <div class="w-44 h-full flex items-center justify-center">
+                        <img
+                        class="w-24 h-24"
+                        src="./img/software.png" alt="software_development_img">
+                    </div>
+                    <div class="px-3 py-2 md:w-96">
+                        <h4 class="text-xl font-semibold text-gray-800 capitalize mt-5">software development</h4>
+                        <p class="text-sm text-gray-600 mt-3">Software development refers to a set of computer science activities dedicated to the process of creating, designing, deploying and supporting software.</p>
+                    </div>
+                </div>
+                <div class="h-max md:h-44 shadow-lg rounded-lg card flex md:flex-row flex-col items-center border py-4 md:py-0">
+                    <div class="w-44 h-full flex items-center justify-center">
+                        <img
+                        class="w-24 h-24"
+                        src="./img/internet-of-things.png" alt="iot_img">
+                    </div>
+                    <div class="px-3 py-2 md:w-96">
+                        <h4 class="text-xl font-semibold text-gray-800 capitalize mt-5">internet of things</h4>
+                        <p class="text-sm text-gray-600 mt-3">The Internet of Things (IoT) is the network of physical objects that contain embedded technology to communicate and sense or interact with their internal states or the external environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+    <section class="works h-full mb-10" id="work">
+        <h2 class="text-2xl md:text-3xl font-semibold text-green-500 services_text uppercase tracking-wide mb-12">our clients</h2>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7 h-full p-2">
+            <div class="h-auto py-3 shadow-lg rounded-lg flex flex-col items-center justify-between text-center border card">
+                <div class="h-full flex items-center justify-center">
+                    <img
+                    class="w-28 h-28 rounded-full border shadow-lg"
+                    src="./img/work/bobst.jpg" alt="bobst-client">
+                </div>
+                <div class="mt-7">
+                    <a href="https://www.bobst.com/inen/" class="hover:text-blue-500 font-semibold">BOBST</a>
+                </div>
+            </div>
+
+            <div class="h-auto py-3 shadow-lg rounded-lg flex flex-col items-center justify-between text-center border card">
+                <div class="h-full flex items-center justify-center">
+                    <img
+                    class="w-28 h-28  rounded-full border shadow-lg"
+                    src="./img/work/dreamgenics.jpg" alt="DREAMgenics-client">
+                </div>
+                <div class="mt-7">
+                    <a href="https://www.dreamgenics.com/" class="hover:text-blue-500 font-semibold">DREAMgenics</a>
+                </div>
+            </div>
+
+            <div class="h-auto py-3 shadow-lg rounded-lg flex flex-col items-center justify-between text-center border card">
+                <div class="h-full flex items-center justify-center">
+                    <img
+                    class="w-28 h-28 p-2.5 rounded-full border shadow-lg"
+                    src="./img/work/mk-traders.jpg" alt="mk-traders-client">
+                </div>
+                <div class="mt-7">
+                    <a href="/" class="hover:text-blue-500 font-semibold">mk traders</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+    <section class="w-full h-full mb-10" id="testimonials">
+        <div class="my-4 testimonials">
+            <h2 class="text-2xl md:text-3xl font-semibold text-green-500 services_text uppercase tracking-wide">testimonials</h2>
+        </div>
+        <br><br>
+        <div class="splide testimonials_slider">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide border h-max rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/testimonials/likhita.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">Likitha Karkera</span>
+                            <p class="text-sm text-gray-600 italic capitalize tracking-wide">HR Operations</p>
+                        </div>
+                        <div class="text-center w-full px-3 mt-5">
+                            <p class="text-sm text-gray-800">"WeIT is excellent in their technical skills. They are marvelous. Their team is hardworking and efficiently. Recommended!!"</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/testimonials/Advait.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">Advait Supnekar</span>
+                            <p class="text-sm text-gray-600 italic capitalize tracking-wide">Chief Consultant</p>
+                        </div>
+                        <div class="text-center w-full px-3 mt-5">
+                            <p class="text-sm text-gray-800">"Automation & Design have
+                                completely surpassed our expectations. Great job, I will definitely be reaching out again for my other projects!"</p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/testimonials/hardhik.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">hardik sanghvi </span>
+                            <p class="text-sm text-gray-600 italic capitalize tracking-wide">lead Developer</p>
+                        </div>
+                        <div class="text-center w-full px-3 mt-5">
+                            <p class="text-sm text-gray-800">"It was an amazing experince working with the team. Retuns are worth much more than I paid for."</p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/testimonials/Shantanu.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">Shantanu Sharma</span>
+                            <p class="text-sm text-gray-600 italic capitalize tracking-wide">Business Analyst</p>
+                        </div>
+                        <div class="text-center w-full px-3 mt-5">
+                            <p class="text-sm text-gray-800">"Dude, your stuff is the bomb! I would like to personally thank you for making my product outstanding."</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/testimonials/Omkar.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">Omkar Achrekar</span>
+                            <p class="text-sm text-gray-600 italic capitalize tracking-wide">Data Analyst</p>
+                        </div>
+                        <div class="text-center w-full px-3 mt-5">
+                            <p class="text-sm text-gray-800">"We are extremely satisfied with the results. It's exactly what I've been looking for. "</p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/testimonials/pradhnyal.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">Pradnyal Gandhi</span>
+                            <p class="text-sm text-gray-600 italic capitalize tracking-wide">python intern</p>
+                        </div>
+                        <div class="text-center w-full px-3 mt-5">
+                            <p class="text-sm text-gray-800">"We-IT team is excellent in their technical skills. They have always delivered the best results."</p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/testimonials/saurabh.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">Saurabh Kewlani</span>
+                            <p class="text-sm text-gray-600 italic capitalize tracking-wide">Head - IT</p>
+                        </div>
+                        <div class="text-center w-full px-3 mt-5">
+                            <p class="text-sm text-gray-800">"We-IT team is excellent in their technical skills. They have always delivered the best results."</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+
+    <section class="h-full mb-10" id="team">
+        <div class="our_team">
+            <h2 class="text-2xl md:text-3xl font-semibold text-green-500 services_text uppercase tracking-wide">our team</h2>
+        </div>
+        <br><br>
+        <div class="splide our_team_slider">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/team/dishant_.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">dishant raut</span>
+                            <p class="text-sm text-gray-800 italic capitalize tracking-wide">founder</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/team/ashwini_gharal.png" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">ashwini gharal
+
+
+                            </span>
+                            <p class="text-sm text-gray-800 italic capitalize tracking-wide">jr. software Engineer</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/team/bala_krithika.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">bala krithika</span>
+                            <p class="text-sm text-gray-800 italic capitalize tracking-wide">Software Engineer </p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/team/mrinal.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">Mrinal Thakkar</span>
+                            <p class="text-sm text-gray-800 italic capitalize tracking-wide">Associate Data Scientist</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/team/sumit.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">Sumit Gupta</span>
+                            <p class="text-sm text-gray-800 italic capitalize tracking-wide">UI/UX Designer</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/team/swapnil.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">Swapnil Tirpude</span>
+                            <p class="text-sm text-gray-800 italic capitalize tracking-wide">Assistant Product Manager</p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/team/mayuri-more.jpeg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">mayuri more</span>
+                            <p class="text-sm text-gray-800 italic capitalize tracking-wide">intern</p>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide border rounded-lg overflow-hidden shadow-lg flex flex-col justify-between py-4">
+                        <div class="flex items-center justify-center w-full p-2">
+                            <img src="./img/team/aniket.jpg" alt="img" class="w-36 h-36 object-cover shadow-lg rounded-full">
+                        </div>
+                        <div class="w-full flex flex-col space-y-1 items-center justify-center">
+                            <span class="text-md text-gray-900 font-semibold capitalize tracking-wide">aniket shinde</span>
+                            <p class="text-sm text-gray-800 italic capitalize tracking-wide">UI/UX Engineer</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <section class="contact_us h-full mb-10" id="contact">
+        <h2 class="text-2xl md:text-3xl font-semibold text-green-500 services_text uppercase tracking-wide">contact us</h2>
+        <br><br>
+        <section class="mt-5 w-full px-4 flex md:flex-row flex-col items-center justify-between contact_us_info md:space-y-0 space-y-10">
+            <div class="w-96 h-full flex flex-col items-center justify-evenly md:pb-0 pb-7">
+                <div class="flex flex-col items-center w-full pt-4">
+                    <span class="mb-4"><svg class="w-12 h-12 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></span>
+                    <span class="text-lg font-semibold text-gray-400 uppercase tracking-wide mb-6">address</span>
+                </div>
+                <div class="w-72 text-center">
+                    <p class="text-sm text-gray-700 tracking-wide">16 Yashwant Niwas , Near Pandav Kund CHS, Nardas Nagar, Bhandup - (W)
+                    </p>
+                </div>
+            </div>
+            <div class="w-96 h-full flex flex-col items-center justify-evenly md:pb-0 pb-7">
+                <div class="flex flex-col items-center w-full pt-4">
+                    <span class="mb-4">
+                        <svg class="w-12 h-12 text-green-400"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </span>
+                    <span class="text-lg font-semibold text-gray-400 uppercase tracking-wide mb-6">phone number</span>
+                </div>
+                <div class="w-full text-center">
+                    <p class="text-md text-gray-700 tracking-wide">+91 8591014774</p>
+                </div>
+            </div>
+            <div class="w-96 h-full flex flex-col items-center justify-evenly">
+                <div class="flex flex-col items-center w-full pt-4">
+                    <span class="mb-4"><svg class="w-12 h-12 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path></svg></span>
+                    <span class="text-lg font-semibold text-gray-400 uppercase tracking-wide mb-6">email</span>
+                </div>
+                <div class="w-full text-center">
+                    <a href="mailto:dishant-raut@we-it.in" class="text-md text-gray-700 tracking-wide">dishant-raut@we-it.in</a>
+                </div>
+            </div>
+        </section>
+        <br><br>
+    </section>
+    <br>
+
+    <section class="h-96 locate_map">
+        <div id="mapid" class="w-full h-full rounded-lg shadow"></div>
+    </section>
+    <br><br>
+
+
+    <section class="h-80 my-4 contact_us">
+        <form id="formInp">
+            <div class="w-full h-20 flex md:flex-row flex-col items-center md:justify-between space-y-6 md:space-y-0 md:space-x-6">
+                <div class="name w-full">
+                    <input id="nameInp" type="text" placeholder="Your name" class="name_inp h-12 outline-none w-full md:max-w-full px-5 rounded focus:ring ring-green-400 ring-opacity-25 border border-green-300">
+                </div>
+                <div class="email w-full">
+                    <input type="email" placeholder="Your Email" class="email_inp w-full px-5 md:max-w-full h-12 outline-none rounded focus:ring ring-green-400 ring-opacity-25 border border-green-300">
+                </div>
+            </div>
+            <div class="w-full h-auto  mt-16 md:mt-3">
+                <input type="text" class="w-full h-12 outline-none rounded px-5 focus:ring ring-green-400 ring-opacity-25 border border-green-300" placeholder="Your Subject">
+            </div>
+            <div class="w-full h-auto mt-5">
+            <textarea
+            placeholder="Describe your message here..."
+            class="w-full h-36 outline-none px-5 rounded focus:ring ring-green-400 ring-opacity-25 border border-green-300">
+            </textarea>
+            </div>
+            <div class="w-full h-10 flex items-center justify-center mt-4">
+                <button
+                type="submit"
+                class="w-full md:w-44 h-full bg-green-500 hover:bg-green-600 rounded-md capitalize text-white tracking-wide">send message</button>
+            </div>
+        </form>
+    </section>
+
+    <br><br><br><br><br>
+    <footer class="w-full h-14 bg-gray-50 border-t mt-20">
+        <div class="h-full flex md:flex-row flex-col md:items-center justify-between md:py-0 py-2 px-4 md:px-6">
+            <div>
+                <span class="text-md text-blue-500 font-semibold capitalize">Copyright &copy; 2025 <a href="/" class="hover:text-green-400">We-IT</a> - All Rights Reserved</span>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/aniket-shinde-6a83091ba" class="text-sm text-gray-500 hover:text-blue-500 capitalize">design by Aniket</a>
+            </div>
+        </div>
+    </footer>
+
+<!-- ==== SCRIPTS GOES HERE ==== -->
+
+
+<!-- ==== GSAP CDN ==== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<!-- ==== SPLIDEJS CDN ==== -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<!-- ==== ANIMATIONS.JS ==== -->
+<script src="./js/animation.js"></script>
+<!-- ==== SPLIDE.JS ==== -->
+<script src="./js/splide.js"></script>
+<!-- ==== SCRIPT.JS ==== -->
+<script src="./js/script.js"></script>
+
+
+</body>
+</html>
