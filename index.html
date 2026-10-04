@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>We-IT : We Make it Happen</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="./img/ai_logo.png" />
+    <!-- === TAILWINDCSS CDN === -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- === SCROLLREVEL CDN === -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- === REMIXICON CDN === -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="w-full h-14 bg-white border-b border-gray-200 px-7 md:px-14">
+      <nav class="w-full h-full flex items-center justify-between">
+        <a href="https://we-it.in" class="flex items-center space-x-2 logo">
+          <!-- logo -->
+          <img src="./img/ai_logo.png" alt="" class="w-10 h-10 object-cover" />
+          <h3 class="text-2xl text-blue-500 font-semibold capitalize">
+            we <span class="text-green-400">IT</span>
+          </h3>
+        </a>
+        <div class="nav_menu" id="nav_menu">
+          <button
+            class="outline-none absolute top-3 right-5"
+            id="close_btn"
+            aria-label="Close navigation"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <ul class="lg:flex items-center md:space-x-6">
+            <li class="list_item">
+              <a class="text-md font-semibold capitalize nav_link" href="#about">about</a>
+            </li>
+            <li class="list_item">
+              <a class="text-md font-semibold capitalize nav_link" href="#services">services</a>
+            </li>
+            <li class="list_item">
+              <a class="text-md font-semibold capitalize nav_link" href="#testimonials"
+                >testimonials</a
+              >
+            </li>
+            <li class="list_item">
+              <a class="text-md font-semibold capitalize nav_link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          id="toggle_btn"
+          class="lg:hidden block"
+          aria-label="Open navigation menu"
+          aria-controls="nav_menu"
+          aria-expanded="false"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero w-full" id="hero">
+        <div class="hero_content">
+          <h1 class="hero_title"><span>We</span> Make <span>IT</span> Happen.</h1>
+          <p class="hero_supporting">
+            Software, automation, AI and connected systems built around your business.
+          </p>
+          <a class="hero_cta" href="#contact">
+            Discuss a project <i class="ri-arrow-right-line" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="about_section" id="about">
+        <div class="about_inner">
+          <div class="about_intro">
+            <p class="section_kicker">01 / ABOUT WE-IT</p>
+            <h2 class="section_title">Technology should make work feel simpler.</h2>
+          </div>
+          <div class="about_story">
+            <p class="about_lede">
+              WE-IT builds practical technology around the way people and businesses work.
+            </p>
+            <p>
+              From bespoke software and automation to data and connected systems, we help teams
+              solve real operational challenges with solutions designed for everyday use.
+            </p>
+            <a class="about_cta" href="#services"
+              >Explore our services <i class="ri-arrow-right-line" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="about_principles">
+          <article class="about_principle">
+            <span>01</span>
+            <h3>People first</h3>
+            <p>
+              Technology works best when it makes the experience clearer for the people who use it.
+            </p>
+          </article>
+          <article class="about_principle">
+            <span>02</span>
+            <h3>Built around your work</h3>
+            <p>
+              We shape solutions around your goals, processes and the realities of your business.
+            </p>
+          </article>
+          <article class="about_principle">
+            <span>03</span>
+            <h3>Made with care</h3>
+            <p>Trust, integrity and quality guide how we deliver tailored technology solutions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="services_container" id="services">
+        <div class="services">
+          <div class="services_intro">
+            <div>
+              <p class="section_kicker">02 / WHAT WE DO</p>
+              <h2 class="section_title">Technology for your next practical step.</h2>
+            </div>
+            <p>
+              Focused capabilities to make everyday work simpler, more connected and more effective.
+            </p>
+          </div>
+          <div class="services_grid">
+            <article class="service_item">
+              <div class="service_item_top">
+                <span>01</span
+                ><i class="ri-settings-3-line service_icon_glyph" aria-hidden="true"></i>
+              </div>
+              <h3>Automation &amp; AI</h3>
+              <p>
+                Streamline repeatable work with workflow automation and task-focused AI agents, with
+                people in control.
+              </p>
+            </article>
+            <article class="service_item">
+              <div class="service_item_top">
+                <span>02</span
+                ><i class="ri-code-s-slash-line service_icon_glyph" aria-hidden="true"></i>
+              </div>
+              <h3>Software &amp; Web</h3>
+              <p>
+                Design responsive web experiences and custom software around the way your business
+                operates.
+              </p>
+            </article>
+            <article class="service_item">
+              <div class="service_item_top">
+                <span>03</span
+                ><i class="ri-database-2-line service_icon_glyph" aria-hidden="true"></i>
+              </div>
+              <h3>Data &amp; Connected Systems</h3>
+              <p>
+                Build trusted data pipelines and connect devices to give teams better information
+                and smarter systems.
+              </p>
+            </article>
+            <article class="service_item">
+              <div class="service_item_top">
+                <span>04</span><i class="ri-cpu-line service_icon_glyph" aria-hidden="true"></i>
+              </div>
+              <h3>Robotics</h3>
+              <p>
+                Design and deploy intelligent machines that support people and improve productivity.
+              </p>
+            </article>
+          </div>
+          <p class="services_note">
+            We also turn proven methods and team knowledge into practical playbooks people can put
+            to work.
+          </p>
+        </div>
+      </section>
+
+      <section class="h-full mb-10" id="testimonials">
+        <div class="my-4 testimonials">
+          <p class="section_kicker">03 / TESTIMONIALS</p>
+          <h2 class="section_title">What clients say.</h2>
+        </div>
+        <br /><br />
+        <div class="flex justify-center">
+          <a
+            href="https://www.linkedin.com/in/dishant-raut/details/recommendations/"
+            target="_blank"
+            class="text-lg text-blue-600 hover:text-green-500 underline font-semibold"
+          >
+            View Testimonials
+          </a>
+        </div>
+        <br /><br /><br />
+      </section>
+
+      <section class="contact_us h-full mb-10 mt-8" id="contact">
+        <p class="section_kicker">04 / CONTACT</p>
+        <h2 class="section_title">Contact us.</h2>
+        <div class="contact_methods">
+          <article class="contact_method">
+            <svg
+              class="contact_method_icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+            </svg>
+            <h3 class="contact_method_label">Address</h3>
+            <address class="contact_method_details">
+              <p><span aria-hidden="true">🇮🇳 </span>Mumbai, India</p>
+              <p><span aria-hidden="true">🌍 </span>Virtual, Global</p>
+            </address>
+          </article>
+          <article class="contact_method">
+            <svg
+              class="contact_method_icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+              ></path>
+            </svg>
+            <h3 class="contact_method_label">Phone</h3>
+            <p class="contact_method_details"><a href="tel:+918591014774">+91 8591014774</a></p>
+          </article>
+          <article class="contact_method">
+            <svg
+              class="contact_method_icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+              ></path>
+            </svg>
+            <h3 class="contact_method_label">Email</h3>
+            <p class="contact_method_details">
+              <a href="mailto:dishant-raut@we-it.in">dishant-raut@we-it.in</a>
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="w-full h-14 bg-gray-50 border-t mt-20">
+      <div
+        class="h-full flex md:flex-row flex-col md:items-center justify-between md:py-0 py-2 px-4 md:px-6"
+      >
+        <div>
+          <span class="text-md text-blue-500 font-semibold capitalize"
+            >Copyright &copy; <span id="current_year">2025</span>
+            <a
+              href="https://www.linkedin.com/company/we-it-make-it-happen/"
+              target="_blank"
+              class="hover:text-green-400"
+              >We-IT</a
+            >
+            - All Rights Reserved</span
+          >
+        </div>
+        <div>
+          <a
+            href="https://dishantraut.me"
+            target="_blank"
+            class="text-sm text-gray-500 hover:text-blue-500 capitalize"
+            >design by Dishant</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <a href="#hero" class="back_to_top" aria-label="Back to top" title="Back to top">
+      <i class="ri-arrow-up-line" aria-hidden="true"></i>
+    </a>
+
+    <!-- ==== GSAP CDN ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <!-- ==== ANIMATIONS.JS ==== -->
+    <script src="./js/animation.js"></script>
+    <!-- ==== SCRIPT.JS ==== -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

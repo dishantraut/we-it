@@ -1,0 +1,11 @@
+{
+  "name": "we-it-static-site",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write index.html css/style.css js/*.js README.md",
+    "format:check": "prettier --check index.html css/style.css js/*.js README.md"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
